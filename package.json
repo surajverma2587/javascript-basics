@@ -1,0 +1,16 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --coverage",
+    "exercises": "jest --watchAll src/exercises",
+    "results": "jest --watchAll src/results"
+  },
+  "author": "Suraj Verma",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
