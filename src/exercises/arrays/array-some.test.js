@@ -1,20 +1,20 @@
 const arraySome = require('./array-some');
 
-describe('primeNumberIsPresent', () => {
+describe('bigNumberIsPresent', () => {
   test('should return true if a prime number is present', () => {
     const mockNumbers = [45, 56, 73, 64, 9];
-    const actual = arraySome.primeNumberIsPresent(mockNumbers);
+    const actual = arraySome.bigNumberIsPresent(mockNumbers);
     expect(actual).toBe(true);
   });
 
   test('should return false if a prime number is not present', () => {
     const mockNumbers = [45, 56, 75, 64, 9];
-    const actual = arraySome.primeNumberIsPresent(mockNumbers);
+    const actual = arraySome.bigNumberIsPresent(mockNumbers);
     expect(actual).toBe(false);
   });
 });
 
-describe('winnerPresent', () => {
+describe('winnerIsPresent', () => {
   test('should return true if a winner is present', () => {
     const mockUsers = [
       {
@@ -36,7 +36,7 @@ describe('winnerPresent', () => {
         score: 90,
       },
     ];
-    const actual = arraySome.winnerPresent(mockUsers);
+    const actual = arraySome.winnerIsPresent(mockUsers);
     expect(actual).toBe(true);
   });
 
@@ -61,7 +61,7 @@ describe('winnerPresent', () => {
         score: 90,
       },
     ];
-    const actual = arraySome.winnerPresent(mockUsers);
+    const actual = arraySome.winnerIsPresent(mockUsers);
     expect(actual).toBe(false);
   });
 })
